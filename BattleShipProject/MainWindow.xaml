@@ -1,0 +1,50 @@
+﻿<Window x:Class="BattleShipProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BattleShipProject"
+        mc:Ignorable="d"
+        Title="Battle Ship by Nikola Vacic" Height="800" Width="800" WindowState="Maximized">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Images/background.jpeg"></ImageBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="1" FontSize="40" Foreground="White" Margin="0 10 0 0" HorizontalAlignment="Center">Dobro dosli u Battle Ship igricu</TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="1" FontSize="30" Foreground="White" Margin ="0 20 0 20" HorizontalAlignment="Center" >Instrukcije</TextBlock>
+        <TextBlock Grid.Row="2" Grid.Column="1" FontSize="25" Foreground="White" Margin ="0 20 0 5" TextWrapping="Wrap">1. Svaki igrac dobija 5 brodova, duzine 5, 4, 3, 3, 2.</TextBlock>
+        <TextBlock Grid.Row="3" Grid.Column="1" FontSize="25" Foreground="White" Margin ="0 20 0 5" TextWrapping="Wrap">2. Brodove je potrebno postaviti na tablu dimenzije 8x8.</TextBlock>
+        <TextBlock Grid.Row="4" Grid.Column="1" FontSize="25" Foreground="White" Margin ="0 20 0 5" >3. Igrac i kompjuter neizmenicno gadjaju polja.</TextBlock>
+        <TextBlock Grid.Row="5" Grid.Column="1" FontSize="25" Foreground="White" Margin ="0 20 0 5" >4. Ukoliko pogode polje na kom se nalazi brod taj brod ispada.</TextBlock>
+        <TextBlock Grid.Row="6" Grid.Column="1" FontSize="25" Foreground="White" Margin ="0 20 0 5" >5. Partija je gotova kada jedan igrac ostane bez brodova.</TextBlock>
+        <StackPanel Grid.Row="7" Grid.Column="1" Orientation="Horizontal" Margin="0 70 0 0">
+            <Label Foreground="White" FontSize="40" Margin="0 0 20 0 ">Ime:</Label>
+            <TextBox Name="textBoxIme" MinWidth="400" MaxWidth="500" FontSize="40" Foreground="Black"></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Row="8" Grid.Column="1" Orientation="Horizontal" Margin="0 20 0 0">
+            <Label Foreground="White" FontSize="25" Margin="0 0 20 0 ">Tezina: </Label>
+            <RadioButton Name="easy" GroupName ="Difficulty" VerticalContentAlignment ="Center" VerticalAlignment="Center" Margin="30 0 10 0" FontSize="25" IsChecked="True">Lako</RadioButton>
+            <RadioButton Name="medium" GroupName ="Difficulty" VerticalContentAlignment ="Center" VerticalAlignment="Center" Margin="30 0 10 0" FontSize="25">Srednje</RadioButton>
+            <RadioButton Name="hard" GroupName ="Difficulty" VerticalContentAlignment ="Center" VerticalAlignment="Center" Margin="30 0 10 0" FontSize="25">Tesko</RadioButton>
+        </StackPanel>
+        <Button Name="enterButton" Grid.Column="1" Grid.Row="9" FontSize="40" Margin="0 20 0 0" Click="enterButton_Click">Pokreni</Button>
+    </Grid>
+</Window>

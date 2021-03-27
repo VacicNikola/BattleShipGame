@@ -1,0 +1,9 @@
+C:\Users\Nikola\Documents\Visual Studio 2019\MyProjects\WPF\BattleShip\BattleShip\Battleship.Library\bin\Debug\netstandard2.0\Battleship.Library.deps.json
+C:\Users\Nikola\Documents\Visual Studio 2019\MyProjects\WPF\BattleShip\BattleShip\Battleship.Library\bin\Debug\netstandard2.0\Battleship.Library.dll
+C:\Users\Nikola\Documents\Visual Studio 2019\MyProjects\WPF\BattleShip\BattleShip\Battleship.Library\bin\Debug\netstandard2.0\Battleship.Library.pdb
+C:\Users\Nikola\Documents\Visual Studio 2019\MyProjects\WPF\BattleShip\BattleShip\Battleship.Library\obj\Debug\netstandard2.0\Battleship.Library.AssemblyInfoInputs.cache
+C:\Users\Nikola\Documents\Visual Studio 2019\MyProjects\WPF\BattleShip\BattleShip\Battleship.Library\obj\Debug\netstandard2.0\Battleship.Library.AssemblyInfo.cs
+C:\Users\Nikola\Documents\Visual Studio 2019\MyProjects\WPF\BattleShip\BattleShip\Battleship.Library\obj\Debug\netstandard2.0\Battleship.Library.csproj.CoreCompileInputs.cache
+C:\Users\Nikola\Documents\Visual Studio 2019\MyProjects\WPF\BattleShip\BattleShip\Battleship.Library\obj\Debug\netstandard2.0\Battleship.Library.dll
+C:\Users\Nikola\Documents\Visual Studio 2019\MyProjects\WPF\BattleShip\BattleShip\Battleship.Library\obj\Debug\netstandard2.0\Battleship.Library.pdb
+C:\Users\Nikola\Documents\Visual Studio 2019\MyProjects\WPF\BattleShip\BattleShip\Battleship.Library\obj\Debug\netstandard2.0\Battleship.Library.csprojAssemblyReference.cache

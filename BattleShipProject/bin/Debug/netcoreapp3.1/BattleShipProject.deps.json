@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "BattleShipProject/1.0.0": {
+        "dependencies": {
+          "Battleship.Library": "1.0.0"
+        },
+        "runtime": {
+          "BattleShipProject.dll": {}
+        }
+      },
+      "Battleship.Library/1.0.0": {
+        "runtime": {
+          "Battleship.Library.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BattleShipProject/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Battleship.Library/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

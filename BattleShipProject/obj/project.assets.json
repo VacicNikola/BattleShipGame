@@ -1,0 +1,98 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Battleship.Library/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Battleship.Library.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Battleship.Library.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Battleship.Library/1.0.0": {
+      "type": "project",
+      "path": "../Battleship.Library/Battleship.Library.csproj",
+      "msbuildProject": "../Battleship.Library/Battleship.Library.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "Battleship.Library >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Nikola\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Nikola\\Documents\\Visual Studio 2019\\MyProjects\\WPF\\BattleShip\\BattleShip\\BattleShipProject\\BattleShipProject.csproj",
+      "projectName": "BattleShipProject",
+      "projectPath": "C:\\Users\\Nikola\\Documents\\Visual Studio 2019\\MyProjects\\WPF\\BattleShip\\BattleShip\\BattleShipProject\\BattleShipProject.csproj",
+      "packagesPath": "C:\\Users\\Nikola\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Nikola\\Documents\\Visual Studio 2019\\MyProjects\\WPF\\BattleShip\\BattleShip\\BattleShipProject\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Nikola\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "projectReferences": {
+            "C:\\Users\\Nikola\\Documents\\Visual Studio 2019\\MyProjects\\WPF\\BattleShip\\BattleShip\\Battleship.Library\\Battleship.Library.csproj": {
+              "projectPath": "C:\\Users\\Nikola\\Documents\\Visual Studio 2019\\MyProjects\\WPF\\BattleShip\\BattleShip\\Battleship.Library\\Battleship.Library.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WPF": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

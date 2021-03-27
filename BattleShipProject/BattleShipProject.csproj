@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="PostavkaBrodova.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Images\background.jpeg" />
+    <None Remove="Images\minibg.png" />
+    <None Remove="Images\rotate.png" />
+    <None Remove="Images\Ship2Horizontal.png" />
+    <None Remove="Images\Ship2Vertical.png" />
+    <None Remove="Images\Ship3Horizontal.png" />
+    <None Remove="Images\Ship3Vertical.png" />
+    <None Remove="Images\Ship4Horizontal.png" />
+    <None Remove="Images\Ship4Vertical.png" />
+    <None Remove="Images\Ship5Horizontal.png" />
+    <None Remove="Images\Ship5Vertical.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Battleship.Library\Battleship.Library.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\background.jpeg" />
+    <Resource Include="Images\minibg.png" />
+    <Resource Include="Images\rotate.png" />
+    <Resource Include="Images\Ship2Horizontal.png" />
+    <Resource Include="Images\Ship2Vertical.png" />
+    <Resource Include="Images\Ship3Horizontal.png" />
+    <Resource Include="Images\Ship3Vertical.png" />
+    <Resource Include="Images\Ship4Horizontal.png" />
+    <Resource Include="Images\Ship4Vertical.png" />
+    <Resource Include="Images\Ship5Horizontal.png" />
+    <Resource Include="Images\Ship5Vertical.png" />
+  </ItemGroup>
+
+</Project>
