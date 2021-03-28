@@ -2,7 +2,7 @@
 {
     public interface IDifficulty
     {
-        void Execute();
+        string Execute(MyGrid s);
 
     }
 

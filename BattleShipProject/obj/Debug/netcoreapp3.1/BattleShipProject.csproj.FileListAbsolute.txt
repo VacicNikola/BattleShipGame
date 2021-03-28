@@ -22,3 +22,5 @@ C:\Users\Nikola\Documents\Visual Studio 2019\MyProjects\WPF\BattleShip\BattleShi
 C:\Users\Nikola\Documents\Visual Studio 2019\MyProjects\WPF\BattleShip\BattleShip\BattleShipProject\obj\Debug\netcoreapp3.1\BattleShipProject.dll
 C:\Users\Nikola\Documents\Visual Studio 2019\MyProjects\WPF\BattleShip\BattleShip\BattleShipProject\obj\Debug\netcoreapp3.1\BattleShipProject.pdb
 C:\Users\Nikola\Documents\Visual Studio 2019\MyProjects\WPF\BattleShip\BattleShip\BattleShipProject\obj\Debug\netcoreapp3.1\BattleShipProject.genruntimeconfig.cache
+C:\Users\Nikola\Documents\Visual Studio 2019\MyProjects\WPF\BattleShip\BattleShip\BattleShipProject\obj\Debug\netcoreapp3.1\Borba.g.cs
+C:\Users\Nikola\Documents\Visual Studio 2019\MyProjects\WPF\BattleShip\BattleShip\BattleShipProject\obj\Debug\netcoreapp3.1\Borba.baml

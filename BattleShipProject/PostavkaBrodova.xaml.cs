@@ -7,17 +7,14 @@ using System.Windows.Media;
 
 namespace BattleShipProject
 {
-    /// <summary>
-    /// Interaction logic for PostavkaBrodova.xaml
-    /// </summary>
     public partial class PostavkaBrodova : Window
     {
         private ClassForBinding binding;
 
         private Game game;
         private int shipCounter;
-        private List<Ship> listOfShips = new List<Ship> { new Ship(5, true, null, "/Images/Ship5Horizontal.png"), new Ship(4, true, null, "/Images/Ship4Horizontal.png"), new Ship(3, true, null, "/Images/Ship3Horizontal.png"), new Ship(3, true, null, "/Images/Ship3Horizontal.png"), new Ship(2, true, null, "/Images/Ship2Horizontal.png") };
-        private List<string> listOfFields = new List<string>();
+        private List<Ship> listOfShips;
+        private List<string> listOfFields;
         bool shipsPlaced;
 
 
@@ -27,6 +24,8 @@ namespace BattleShipProject
 
             shipCounter = 0;
             shipsPlaced = false;
+            listOfShips = new List<Ship> { new Ship(5, true, null, "/Images/Ship5Horizontal.png"), new Ship(4, true, null, "/Images/Ship4Horizontal.png"), new Ship(3, true, null, "/Images/Ship3Horizontal.png"), new Ship(3, true, null, "/Images/Ship3Horizontal.png"), new Ship(2, true, null, "/Images/Ship2Horizontal.png") };
+            listOfFields = new List<string>();
 
             game = g;
 
@@ -57,7 +56,7 @@ namespace BattleShipProject
 
         private void Field_Click(object sender, RoutedEventArgs e)
         {
-            if (shipCounter == 5)
+            if (shipsPlaced)
                 return;
             else
             {
@@ -91,9 +90,9 @@ namespace BattleShipProject
             }
         }
 
-        private void MouseEnter(object sender, MouseEventArgs e)
+        private void MouseEnters(object sender, MouseEventArgs e)
         {
-            if (shipCounter == 5)
+            if (shipsPlaced)
                 return;
             else
             {
@@ -145,7 +144,7 @@ namespace BattleShipProject
             }
         }
 
-        private void MouseLeave(object sender, MouseEventArgs e)
+        private void MouseLeaves(object sender, MouseEventArgs e)
         {
             foreach (var s in listOfFields)
             {
@@ -160,16 +159,24 @@ namespace BattleShipProject
         private void StartOver_Click(object sender, RoutedEventArgs e)
         {
             PostavkaBrodova newWindow = new PostavkaBrodova(new Game(game.player.Name, game.computer.D));
-            Application.Current.MainWindow = newWindow;
+            //Application.Current.MainWindow = newWindow;
             newWindow.Show();
             this.Close();
         }
 
-        private void Randomize_Click(object sender, RoutedEventArgs e)
+        private void StartGame_Click(object sender, RoutedEventArgs e)
         {
-            StartOver_Click(sender, e);
-            MyGrid.Randomize(game.player.positionOfMyShips, listOfShips);
+            if (shipsPlaced == false)
+                MessageBox.Show("Nemoguce je pokrenuti partiju dok svi brodovi nisu postavljeni", "Greska", MessageBoxButton.OK, MessageBoxImage.Information);
+            else
+            {
+                MyGrid.Randomize(game.computer.positionOfComputerShips, new List<Ship> { new Ship(5, true, null, null), new Ship(4, true, null, null), new Ship(3, true, null, null), new Ship(3, true, null, null), new Ship(2, true, null, null) });
             
+                Borba win = new Borba(game);
+                win.Show();
+                this.Close();
+            }
+        
         }
     }
 }
